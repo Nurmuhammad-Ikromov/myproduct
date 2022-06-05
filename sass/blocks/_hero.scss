@@ -17,6 +17,7 @@
     font-size: 40px;
     line-height: 60px;
     color: #22343D;
+    margin: 0;
 }
 .hero__text {
     font-weight: 400;
@@ -70,6 +71,7 @@
     .hero__img{
         width: 90%;
         height: auto;
+        margin-bottom: 10px;
     }
 
     .hero__title{
@@ -81,6 +83,7 @@
         width: 90%;
         text-align: center;
         margin: 0 auto;
+        margin-top: 16px;
         margin-bottom: 15px;
     }
 
@@ -99,9 +102,43 @@
     }
 }
 
+@include max-width(392px){
+    .hero__text{
+        width: 95%;
+    }
+}
 
+@include max-width(375px){
+    .hero__title{
+        font-size: 32px;
+        line-height: 50px;
+
+    }
+
+    .hero__text{
+        width: 100%;
+    }
+}
 @include max-width(365px)
 {
-    
+    .hero__link{
+        width: 45%;
+    }
+
+    .hero__span{
+        margin-right: 5px;
+    }
+
+    .hero__link{
+        width: 40%;
+    }
+
+
+}
+
+@include max-width(350px){
+    .hero__link{
+        padding: 10px;
+    }
 }
 

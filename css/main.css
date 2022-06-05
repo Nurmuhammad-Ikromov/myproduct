@@ -577,6 +577,7 @@ img {
   font-size: 40px;
   line-height: 60px;
   color: #22343D;
+  margin: 0;
 }
 
 .hero__text {
@@ -643,6 +644,7 @@ img {
   .hero__img {
     width: 90%;
     height: auto;
+    margin-bottom: 10px;
   }
   .hero__title {
     font-size: 36px;
@@ -652,6 +654,7 @@ img {
     width: 90%;
     text-align: center;
     margin: 0 auto;
+    margin-top: 16px;
     margin-bottom: 15px;
   }
   .hero__link-box {
@@ -664,6 +667,40 @@ img {
     padding: 15px 15px 14px 15px;
     text-align: center;
     margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 392px) {
+  .hero__text {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .hero__title {
+    font-size: 32px;
+    line-height: 50px;
+  }
+  .hero__text {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .hero__link {
+    width: 45%;
+  }
+  .hero__span {
+    margin-right: 5px;
+  }
+  .hero__link {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .hero__link {
+    padding: 10px;
   }
 }
 
